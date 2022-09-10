@@ -1,0 +1,140 @@
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+textarea,
+select {
+  cursor: text;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  cursor: pointer;
+  outline: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font: inherit;
+}
+
+address {
+  font: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-weight: 300;
+  line-height: calc(21 / 18);
+  letter-spacing: 1px;
+  font-style: normal;
+  color: black;
+  /* font-family: "RobotoCondensed"; */
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 320px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body .hidden {
+  overflow: hidden;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.container {
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1230px) {
+  .container {
+    padding-right: calc(10px + 5 * ((100vw - 320px) / (1600)));
+  }
+}
+
+@media (min-width: 1230px) {
+  .container {
+    padding-right: calc(10px + 5 * ((100vw - 320px) / (910)));
+  }
+}
+
+@media (max-width: 1230px) {
+  .container {
+    padding-left: calc(10px + 5 * ((100vw - 320px) / (1600)));
+  }
+}
+
+@media (min-width: 1230px) {
+  .container {
+    padding-left: calc(10px + 5 * ((100vw - 320px) / (910)));
+  }
+}
