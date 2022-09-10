@@ -1,5 +1,7 @@
 # **Natallia Paulushkina**
 
+![My photo](https://avatars.githubusercontent.com/u/94257907?s=400&u=2c274b8d2f7216c7e071e8630da39dee9311c8e6&v=4)
+
 ## _Contacts_
 
 * **Location:** Minsk, Belarus
@@ -12,7 +14,7 @@
 ## _About Me_
 
 I work as the chief specialist of the Belneftekhim concern.
-From school I was connected with programming. So, at school I was in a specialized class, in which there was an in-depth study of mathematics and computer science; graduated from the Belarusian State University of Informatics and Radioelectronics and developed software products to automate my workplace; by type of activity, she was associated with the preparation of industrial enterprises for automation for the Digital Economy 4.0 (establishment of business processes) and the subsequent development of appropriate ERP systems. 
+From school I was connected with programming. So, at school I was in a specialized class, in which there was an in-depth study of mathematics and computer science; graduated from the Belarusian State University of Informatics and Radioelectronics and developed software products to automate my workplace; by type of activity, associated with the preparation of industrial enterprises for automation for the Digital Economy 4.0 (establishment of business processes) and the subsequent development of appropriate ERP systems. 
 During my studies, I became interested in website development. So, currently I have developed [my portfolio website](http://s29645vv.beget.tech/), where individual works are posted.
 Now I am doing my best to turn my hobby into my craft and I am sure that the knowledge gained at RSSchool will allow me to get closer to my dream.
 
@@ -32,6 +34,17 @@ Now I am doing my best to turn my hobby into my craft and I am sure that the kno
 
 ## _Code Example_
 
+```
+function multiply(a, b){
+  return a * b;
+}
+
+let result = multiply(1,1);
+alert ( result );
+```
+
+## _Projects_
+[My portfolio website](http://s29645vv.beget.tech/), where individual works are posted - http://s29645vv.beget.tech/
 
 ## _Education_
 
