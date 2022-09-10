@@ -44,7 +44,7 @@ alert ( result );
 ```
 
 ## _Projects_
-[My portfolio website](http://s29645vv.beget.tech/), where individual works are posted - http://s29645vv.beget.tech/
+[My portfolio website](http://s29645vv.beget.tech/), where individual works are posted - http://s29645vv.beget.tech
 
 ## _Education_
 
