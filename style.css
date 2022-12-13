@@ -360,9 +360,25 @@ body {
    padding: 20px;
 }
 
+.footer__link {
+   display: block;
+   text-align: center;
+}
+
 .footer__text {
    text-align: center;
    color: #fff;
+}
+
+.footer__name {
+   text-align: center;
+   color: #fff;
+   font-weight: 700;
+}
+
+.footer__svg {
+   width: 150px;
+   margin: 20px 0;
 }
 
 @media (max-width: 1070.98px) {
@@ -438,5 +454,9 @@ body {
 
    .menu__list {
       font-size: 13px;
+   }
+
+   .footer__svg {
+      width: 100px;
    }
 }
