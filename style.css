@@ -363,6 +363,7 @@ body {
 .footer__link {
    display: block;
    text-align: center;
+   margin: 0 auto 20px;
 }
 
 .footer__text {
@@ -378,7 +379,8 @@ body {
 
 .footer__svg {
    width: 150px;
-   margin: 20px 0;
+   margin-bottom: 20px;
+   display: block;
 }
 
 @media (max-width: 1070.98px) {
