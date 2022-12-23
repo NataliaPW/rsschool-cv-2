@@ -1,2 +1,2 @@
 # plants
-https://NataliaPW.github.io/plants/Plants
+https://NataliaPW.github.io/rsschool-cv/plants/Plants
