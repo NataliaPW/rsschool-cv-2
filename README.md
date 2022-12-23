@@ -1,4 +1,3 @@
 # rsschool-cv
-https://NataliaPW.github.io/rsschool-cv/plants/Plants/index
 
-https://github.com/NataliaPW/rsschool-cv/tree/plants/Plants/index
+https://nataliapw.github.io/rsschool-cv/Plants/
