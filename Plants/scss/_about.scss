@@ -1,0 +1,33 @@
+.about {
+   @include p-adopt(94, 45, 1);
+   @include p-adopt(94, 45, 3);
+
+   &__list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include gap-all-adopt(30, 20, 1);
+      @include p-adopt(63, 30, 1);
+      @include p-adopt(63, 30, 3);
+   }
+
+   &__item {
+      height: 100%;
+
+      &--img {
+         width: calc(464/1220*100%);
+      }
+
+      &--text {
+         width: calc(605/1220*100%);
+      }
+   }
+
+   &__img-box {
+      padding-bottom: 102.33%;
+   }
+
+   &__title {
+      @include m-font(40, 40, 0);
+   }
+}

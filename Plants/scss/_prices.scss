@@ -1,0 +1,237 @@
+.prices {
+   @include p-adopt(40, 25, 1);
+   @include p-adopt(115, 50, 3);
+
+   .title {
+      color: $color-black-100;
+   }
+
+   &__list {
+      display: flex;
+      justify-content: space-between;
+      @include gap-all-adopt(30, 20, 1);
+   }
+
+   &__item {
+      width: calc(332/1220*100%);
+
+      &:last-child {
+         text-align: right;
+         width: calc(452/1220*100%);
+         display: flex;
+         flex-direction: column;
+         align-items: flex-end;
+
+         *:last-child {
+            margin-bottom: 0;
+         }
+
+         .prices__title {
+            @include m-font(38, 40, 0);
+         }
+      }
+   }
+
+   &__title {
+      @include m-font(60, 40, 0);
+   }
+
+   &__btn {
+      width: 162px;
+      height: 50px;
+      border-radius: 5px;
+      @include m-adopt(39, 20, 3);
+   }
+
+   &__img-box {
+      width:152px;
+      height: 175px;
+   }
+}
+
+.accordion {
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+      @include gap-all-adopt(32, 15, 3);
+      border: 1px solid $color-gray-200;
+      align-items: center;
+      border-radius: 20px;
+      @include p-adopt(34, 10, 1);
+      @include p-adopt(34, 10, 3);
+      min-width: 270px;
+   }
+
+   &__item {
+      transition: all 0.5s ease;
+
+      &.accordion__item--active {
+         transition: all 0.5s ease;
+
+         .accordion__content {
+            transition: all 0.5s ease;
+            visibility: visible;
+            height: 100%;
+            opacity: 1;
+         }
+
+         .accordion__title-btn {
+            border-radius: 20px 20px 0 0;
+            background: $color-gray-400;
+         }
+
+         .accordion__name {
+            position: relative;
+
+            &::after {
+               position: absolute;
+               content: "";
+               left: 0;
+               bottom: -15px;
+               height: 0.5px;
+               width: 100%;
+               background-color: $color-gray-500;
+               z-index: 2;
+            }
+         }
+
+         .accordion__btn-box {
+            background-color: $color-gray-500;
+         }
+
+         .accordion__title-icon {
+            transform: rotate(-180deg);
+            stroke: $color-bg;
+         }
+      }
+   }
+
+   &__content {
+      visibility: hidden;
+      height: 0;
+      opacity: 0;
+      margin: 0;
+   }
+
+   &__title-btn {
+      @include p-adopt(40, 10, 2);
+      @include p-adopt(40, 10, 4);
+      background: $color-gray-100;
+      height: 50px;
+      border-radius: 20px;
+      width: 250px;
+   }
+
+   &__name {
+      color: $color-black-100;
+      line-height: 1;
+      font-weight: 700;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__btn-box {
+      width: 16px;
+      height: 16px;
+      background: $color-gray-300;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   &__title-icon {
+      width: 6px;
+      height: 4px;
+      stroke: $color-gray;
+   }
+}
+
+.accordion-content {
+   background: $color-gray-400;
+   border-radius: 0 0 20px 20px;
+   width: 250px;
+   @include p-adopt(40, 10, 2);
+   @include p-adopt(40, 10, 4);
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+      padding-top: 6px;
+      padding-bottom: 12px;
+      gap: 6px;
+   }
+
+   &__item {
+      &:last-child {
+         margin-top: 6px;
+      }
+   }
+
+   &__text {
+      font-size: 10px;
+      font-weight: 300;
+      line-height: 1;
+      color: $color-gray;
+   }
+
+   &__number {
+      &--1 {
+         font-size: 16px;
+         font-weight: 700;
+         line-height: calc(20/16);
+         color: $color-hover;
+      }
+
+      &--2 {
+         font-size: 12px;
+         font-weight: 700;
+         line-height: calc(20/12);
+         color: $color-black-100;
+      }
+
+      &--3 {
+         font-size: 12px;
+         line-height: calc(20/12);
+         color: $color-black-100;
+      }
+   }
+
+   &__btn {
+      width: 86px;
+      height: 25px;
+      background-color: $color-bg;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      outline: transparent;
+      transition: all 0.5s ease;
+
+      &:hover,
+      &:active {
+         background-color: $color-hover;
+
+         .accordion-content {
+            &__btn {
+               &--text {
+                  color: $color-bg;
+               }
+            }
+         }
+      }
+
+      &--text {
+         font-size: 14px;
+         font-weight: 700;
+         line-height: calc(20/14);
+         color: $color-gray;
+
+         &:first-letter {
+            text-transform: uppercase;
+         }
+      }
+   }
+}

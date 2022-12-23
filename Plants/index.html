@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="keywords" content="растение, растеневодство">
+   <meta name="description" content="растение, растеневодство">
+   <meta name="generator" content="Joomla! - Open Source Content Management">
+
+   <title>Plants</title>
+
+   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+   <link rel="manifest" href="images/favicon/site.webmanifest">
+   <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+   <meta name="msapplication-TileColor" content="#da532c">
+   <meta name="theme-color" content="#ffffff">
+
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;@400;700&display=swap" rel="stylesheet">
+
+
+   <link rel="stylesheet" href="css/jquery.formstyler.css">
+   <link rel="stylesheet" href="css/fancybox.min.css">
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="body" id="body">
+
+   <header class="header" id="header">
+      <div class="header__top">
+         <div class="container">
+            <div class="header__menu menu">
+               <a class="header__logo logo" href="#body">
+                  <svg class="logo__img" viewBox="0 0 81 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path class="logo__img--green"
+                        d="M2.52667 20.9466L10.9212 3.66409C10.9212 3.66409 3.57596 7.00909 2.00199 10.9116C0.428017 14.8141 0.927102 18.4038 2.00201 20.9466"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                     <path class="logo__img--green"
+                        d="M1.99646 20.9925C1.99646 20.9925 27.7102 -8.60087 19.3157 4.2216C10.9212 17.0441 20.1707 6.63145 15.4973 14.0678C10.824 21.5041 1.99646 20.9925 1.99646 20.9925Z"
+                        stroke-linejoin="round" />
+                     <path class="logo__img--black"
+                        d="M26.9264 9.84138C28.2811 9.84138 29.2837 10.0654 29.9344 10.5134C30.5957 10.9507 30.9264 11.7294 30.9264 12.8494C30.9264 13.9694 30.6011 14.86 29.9504 15.5214C29.2997 16.172 28.2491 16.4974 26.7984 16.4974H25.4544L25.4064 19.9694L26.6544 20.0814C26.6544 20.38 26.5637 20.7 26.3824 21.0414H22.7824L22.7344 20.4974C23.1824 20.3267 23.6411 20.1987 24.1104 20.1134C24.0464 15.9534 23.9931 12.86 23.9504 10.8334C23.6624 10.78 23.1931 10.652 22.5424 10.4494L22.6224 9.84138H26.9264ZM26.6384 15.4574C27.5557 15.4467 28.2544 15.2174 28.7344 14.7694C29.2144 14.3107 29.4544 13.708 29.4544 12.9614C29.4544 12.2147 29.2197 11.6974 28.7504 11.4094C28.2811 11.1107 27.5291 10.9614 26.4944 10.9614C26.3024 10.9614 25.9771 10.9667 25.5184 10.9774C25.5184 10.988 25.5024 12.4867 25.4704 15.4734L26.6384 15.4574ZM33.9855 9.15338C34.3162 9.15338 34.5508 9.16405 34.6895 9.18538C34.6895 9.55871 34.6202 9.98538 34.4815 10.4654C34.3855 16.7587 34.3375 19.9214 34.3375 19.9534L35.6815 20.0814C35.6815 20.38 35.5908 20.7 35.4095 21.0414H31.7295L31.6815 20.4814C32.1722 20.3107 32.6522 20.1827 33.1215 20.0974L32.9615 10.4174C32.3748 10.3854 31.9055 10.3214 31.5535 10.2254L31.6175 9.39338C32.1615 9.23338 32.9508 9.15338 33.9855 9.15338ZM42.9763 15.8094L42.8963 19.9374C43.3549 19.9694 43.8136 20.044 44.2723 20.1614L44.2403 20.7214C44.0696 20.8067 43.7603 20.9027 43.3123 21.0094C42.8749 21.1054 42.4429 21.1534 42.0163 21.1534C41.8243 20.7694 41.7176 20.4014 41.6963 20.0494C40.4803 20.8494 39.6269 21.2494 39.1363 21.2494C38.3789 21.2494 37.7709 21.0467 37.3123 20.6414C36.8536 20.236 36.6243 19.6707 36.6243 18.9454C36.6243 17.2707 37.6483 16.4067 39.6963 16.3534C40.8909 16.3214 41.4936 16.3054 41.5043 16.3054L41.4883 15.7614C41.4669 15.0254 41.3283 14.4974 41.0723 14.1774C40.8163 13.8467 40.3576 13.6814 39.6963 13.6814C39.4189 13.6814 39.1203 13.7454 38.8003 13.8734L38.4163 15.4734C38.3629 15.484 38.2723 15.4894 38.1443 15.4894L37.4883 15.4414C37.3176 14.9827 37.2269 14.348 37.2163 13.5374C37.4189 13.4307 37.8829 13.2707 38.6083 13.0574C39.3336 12.8334 39.7976 12.7214 40.0003 12.7214C41.0883 12.7214 41.8563 12.9614 42.3043 13.4414C42.7523 13.9214 42.9763 14.7107 42.9763 15.8094ZM39.4883 20.1614C39.7976 20.1614 40.5123 19.8147 41.6323 19.1214L41.5523 17.1214C40.8269 17.1854 40.2189 17.244 39.7283 17.2974C39.2376 17.3507 38.8429 17.4947 38.5443 17.7294C38.2456 17.9534 38.0963 18.3107 38.0963 18.8014C38.0963 19.708 38.5603 20.1614 39.4883 20.1614ZM50.1613 12.7214C51.1853 12.7214 51.9266 12.9774 52.3853 13.4894C52.8439 13.9907 53.0733 14.7587 53.0733 15.7934C53.0733 16.092 53.0306 17.4787 52.9453 19.9534L54.2893 20.0814C54.2893 20.38 54.1986 20.7 54.0173 21.0414H50.3373L50.2893 20.4814C50.7799 20.3107 51.2599 20.1827 51.7293 20.0974C51.6653 17.3027 51.6066 15.7507 51.5533 15.4414C51.5106 15.1214 51.4359 14.844 51.3293 14.6094C51.2226 14.3747 51.0626 14.2094 50.8493 14.1134C50.6359 14.0174 50.3533 13.9694 50.0013 13.9694C49.2973 13.9694 48.6146 14.14 47.9533 14.4814C47.8893 16.9134 47.8466 18.7374 47.8253 19.9534L49.1693 20.0814C49.1693 20.38 49.0786 20.7 48.8973 21.0414H45.2173L45.1693 20.4814C45.6599 20.3107 46.1399 20.1827 46.6093 20.0974C46.5453 17.388 46.4919 15.3827 46.4493 14.0814C45.8626 14.0494 45.3933 13.9854 45.0413 13.8894L45.1053 13.0574C45.6813 12.8974 46.5186 12.8174 47.6173 12.8174C47.7453 13.0094 47.8413 13.2867 47.9053 13.6494C48.3639 13.404 48.8226 13.1907 49.2813 13.0094C49.7506 12.8174 50.0439 12.7214 50.1613 12.7214ZM56.2126 20.0494L56.0846 14.0174H54.8526L54.8046 13.4574C54.9113 13.3827 55.2206 13.244 55.7326 13.0414L57.0446 10.9934C57.258 11.0147 57.4233 11.068 57.5406 11.1534L57.5246 12.9134C58.3246 12.9134 58.9806 12.9667 59.4926 13.0734C59.4926 13.3614 59.402 13.676 59.2206 14.0174H57.4926C57.4713 15.2974 57.45 17.2387 57.4286 19.8414C58.026 19.8734 58.6233 19.98 59.2206 20.1614L59.2046 20.7214C59.0553 20.8174 58.6713 20.9294 58.0526 21.0574C57.4446 21.1854 56.9433 21.2494 56.5486 21.2494C56.4953 21.164 56.426 20.9827 56.3406 20.7054C56.2553 20.4174 56.2126 20.1987 56.2126 20.0494ZM61.9191 20.0174C62.2925 20.1774 62.7458 20.2574 63.2791 20.2574C63.8231 20.2574 64.2498 20.156 64.5591 19.9534C64.8685 19.7507 65.0231 19.4734 65.0231 19.1214C65.0231 18.7694 64.8791 18.476 64.5911 18.2414C64.3031 18.0067 63.9511 17.7987 63.5351 17.6174C63.1191 17.436 62.7031 17.244 62.2871 17.0414C61.8711 16.8387 61.5191 16.572 61.2311 16.2414C60.9431 15.9107 60.7991 15.5267 60.7991 15.0894C60.7991 14.3534 61.0445 13.7774 61.5351 13.3614C62.0258 12.9347 62.7031 12.7214 63.5671 12.7214C64.4418 12.7214 65.2631 12.9187 66.0311 13.3134C66.0418 13.42 66.0471 13.708 66.0471 14.1774C66.0471 14.636 65.9991 15.0307 65.9031 15.3614C65.6471 15.4467 65.3431 15.4894 64.9911 15.4894L64.4631 13.8574C64.2285 13.74 63.9085 13.6814 63.5031 13.6814C63.1085 13.6814 62.7938 13.788 62.5591 14.0014C62.3245 14.204 62.2071 14.4654 62.2071 14.7854C62.2071 15.0947 62.3511 15.3667 62.6391 15.6014C62.9378 15.836 63.2951 16.0494 63.7111 16.2414C64.1271 16.4227 64.5431 16.62 64.9591 16.8334C65.3751 17.036 65.7271 17.308 66.0151 17.6494C66.3138 17.98 66.4631 18.364 66.4631 18.8014C66.4631 19.5694 66.1645 20.172 65.5671 20.6094C64.9805 21.036 64.2551 21.2494 63.3911 21.2494C62.9218 21.2494 62.4205 21.1747 61.8871 21.0254C61.3538 20.8654 60.9058 20.6627 60.5431 20.4174C60.5431 19.7027 60.6071 19.068 60.7351 18.5134C60.9805 18.4707 61.3111 18.4494 61.7271 18.4494L61.9191 20.0174Z" />
+                  </svg>
+               </a>
+
+               <nav class="menu__nav">
+                  <ul class="menu__list">
+                     <li class="menu__item">
+                        <a class="menu__link link" href="#body" data-scroll="#body">
+                           <span class="menu__text link__text">
+                              home
+                           </span>
+                        </a>
+                     </li>
+
+                     <li class="menu__item">
+                        <a class="menu__link link" href="#about" data-scroll="#about">
+                           <span class="menu__text link__text">
+                              about&nbsp;us
+                           </span>
+                        </a>
+                     </li>
+
+                     <li class="menu__item">
+                        <a class="menu__link link" href="#service" data-scroll="#service">
+                           <span class="menu__text link__text">
+                              Service
+                           </span>
+                        </a>
+                     </li>
+
+                     <li class="menu__item">
+                        <a class="menu__link link" href="#price" data-scroll="#price">
+                           <span class="menu__text link__text">
+                              price
+                           </span>
+                        </a>
+                     </li>
+
+                     <li class="menu__item">
+                        <a class="menu__link link" href="#contact" data-scroll="#contact">
+                           <span class="menu__text link__text">
+                              contacts
+                           </span>
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+
+               <button class="menu__btn-burger btn-burger" type="button" aria-label="button menu" id="menuBtn">
+                  <span class="btn-burger__btn-line"></span>
+               </button>
+            </div>
+         </div>
+      </div>
+
+      <div class="header__content content">
+         <div class="container">
+            <ul class="content__list">
+               <li class="content__item content__item--img">
+                  <div class="content__img-box image__box">
+                     <img class="image" src="images/header/leafs.png" alt="main image">
+                  </div>
+               </li>
+
+               <li class="content__item content__item--text">
+                  <h1 class="content__title">
+                     We grow
+                     <span class="content__title--span">
+                        plants
+                     </span>
+                     and give you oxygen
+                  </h1>
+
+                  <p class="content__text">
+                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                     the industry's standard dummy text ever since the 1500s.
+                  </p>
+
+                  <a class="content__btn btn" href="#">
+                     <span class="btn__text btn__text--black">
+                        LEARN MORE
+                     </span>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </header>
+   <main class="main" id="main">
+      <section class="about" id="about">
+         <div class="container">
+            <ul class="about__list">
+               <li class="about__item about__item--text">
+                  <h2 class="about__title title">
+                     We are
+                     <span class="title--hover">
+                        professional experienced
+                     </span>
+                     gardeners
+                  </h2>
+
+                  <p class="about__text">
+                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                     industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                     and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                     the leap into electronic typesetting, remaining essentially unchanged.
+                  </p>
+               </li>
+
+               <li class="about__item about__item--img">
+                  <div class="about__img-box image__box">
+                     <img class="image" src="images/about/img1.png" alt="image">
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+
+      <section class="service" id="service">
+         <div class="container">
+            <div class="service__top">
+
+               <h2 class="service__title title">
+                  Service and our projects
+               </h2>
+
+               <ul class="service__list">
+                  <li class="service__item">
+                     <button class="service__btn btn" type="button">
+                        <span class="btn__text btn__text--red">
+                           Gardens
+                        </span>
+                     </button>
+                  </li>
+
+                  <li class="service__item">
+                     <button class="service__btn btn" type="button">
+                        <span class="btn__text btn__text--red">
+                           Lawn
+                        </span>
+                     </button>
+                  </li>
+
+                  <li class="service__item">
+                     <button class="service__btn btn" type="button">
+                        <span class="btn__text btn__text--red">
+                           Planting
+                        </span>
+                     </button>
+                  </li>
+               </ul>
+            </div>
+
+            <ul class="service__list-btn">
+               <li class="service__item-btn">
+                  <a class="service__link-gallery" href="images/service/img1.jpg" data-fancybox="project">
+                     <div class="service__img-box image__box">
+                        <img class="image" src="images/service/img1.jpg" alt="image">
+                     </div>
+                  </a>
+
+                  <a class="service__link" href="#">
+                     <div class="service__content-box">
+                        <h3 class="service__name">
+                           Garden care
+                        </h3>
+
+                        <p class="service__text">
+                           Lorem Ipsum has been the industry
+                        </p>
+                     </div>
+                  </a>
+               </li>
+
+               <li class="service__item-btn">
+                  <a class="service__link-gallery" href="images/service/img2.jpg" data-fancybox="project">
+                     <div class="service__img-box image__box">
+                        <img class="image" src="images/service/img2.jpg" alt="image">
+                     </div>
+                  </a>
+
+                  <a class="service__link" href="#">
+                     <div class="service__content-box">
+                        <h3 class="service__name">
+                           Planting
+                        </h3>
+
+                        <p class="service__text">
+                           Lorem Ipsum has been the industry
+                        </p>
+                     </div>
+                  </a>
+               </li>
+
+               <li class="service__item-btn">
+                  <a class="service__link-gallery" href="images/service/img3.jpg" data-fancybox="project">
+                     <div class="service__img-box image__box">
+                        <img class="image" src="images/service/img3.jpg" alt="image">
+                     </div>
+                  </a>
+
+                  <a class="service__link" href="#">
+                     <div class="service__content-box">
+                        <h3 class="service__name">
+                           Garden care
+                        </h3>
+
+                        <p class="service__text">
+                           Lorem Ipsum has been the industry
+                        </p>
+                     </div>
+                  </a>
+               </li>
+
+               <li class="service__item-btn">
+                  <a class="service__link-gallery" href="images/service/img4.jpg" data-fancybox="project">
+                     <div class="service__img-box image__box">
+                        <img class="image" src="images/service/img4.jpg" alt="image">
+                     </div>
+                  </a>
+
+                  <a class="service__link" href="#">
+                     <div class="service__content-box">
+                        <h3 class="service__name">
+                           Planting
+                        </h3>
+
+                        <p class="service__text">
+                           Lorem Ipsum has been the industry
+                        </p>
+                     </div>
+                  </a>
+               </li>
+
+               <li class="service__item-btn">
+                  <a class="service__link-gallery" href="images/service/img5.jpg" data-fancybox="project">
+                     <div class="service__img-box image__box">
+                        <img class="image" src="images/service/img5.jpg" alt="image">
+                     </div>
+                  </a>
+
+                  <a class="service__link" href="#">
+                     <div class="service__content-box">
+                        <h3 class="service__name">
+                           Lawn care
+                        </h3>
+
+                        <p class="service__text">
+                           Lorem Ipsum has been the industry
+                        </p>
+                     </div>
+                  </a>
+               </li>
+
+               <li class="service__item-btn">
+                  <a class="service__link-gallery" href="images/service/img6.jpg" data-fancybox="project">
+                     <div class="service__img-box image__box">
+                        <img class="image" src="images/service/img6.jpg" alt="image">
+                     </div>
+                  </a>
+
+                  <a class="service__link" href="#">
+                     <div class="service__content-box">
+                        <h3 class="service__name">
+                           Planting
+                        </h3>
+
+                        <p class="service__text">
+                           Lorem Ipsum has been the industry
+                        </p>
+                     </div>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </section>
+
+      <section class="prices" id="prices">
+         <div class="container">
+            <ul class="prices__list">
+               <li class="prices__item">
+                  <h2 class="prices__title title">
+                     prices
+                  </h2>
+
+                  <ul class="prices__list-accordion accordion__list">
+                     <li class="accordion__item">
+                        <button class="accordion__title-btn" type="button">
+                           <h3 class="accordion__name">
+                              Basics
+
+                              <div class="accordion__btn-box">
+                                 <svg class="accordion__title-icon" viewBox="0 0 6 4" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.00003 3.0129L1.00003 1.01302" stroke-width="0.5"
+                                       stroke-linecap="round" />
+                                    <path d="M3 3.0127L5 1.0127" stroke-width="0.5" stroke-linecap="round" />
+                                 </svg>
+                              </div>
+                           </h3>
+                        </button>
+
+                        <div class="accordion__content accordion-content">
+                           <ul class="accordion-content__list">
+                              <li class="accordion-content__item">
+                                 <p class="accordion-content__text">
+                                    Release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                 </p>
+                              </li>
+
+                              <li class="accordion-content__item">
+                                 <span class="accordion-content__number--1">
+                                    $15
+                                 </span>
+
+                                 <span class="accordion-content__number--2">
+                                    /
+                                 </span>
+
+                                 <span class="accordion-content__number--3">
+                                    per hour
+                                 </span>
+                              </li>
+
+                              <li class="accordion-content__item">
+                                 <a class="accordion-content__btn" href="#">
+                                    <span class="accordion-content__btn--text">
+                                       order
+                                    </span>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </li>
+
+                     <li class="accordion__item">
+                        <button class="accordion__title-btn" type="button">
+                           <h3 class="accordion__name">
+                              Standart
+
+                              <div class="accordion__btn-box">
+                                 <svg class="accordion__title-icon" viewBox="0 0 6 4" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.00003 3.0129L1.00003 1.01302" stroke-width="0.5"
+                                       stroke-linecap="round" />
+                                    <path d="M3 3.0127L5 1.0127" stroke-width="0.5" stroke-linecap="round" />
+                                 </svg>
+                              </div>
+                           </h3>
+                        </button>
+
+                        <div class="accordion__content accordion-content">
+                           <ul class="accordion-content__list">
+                              <li class="accordion-content__item">
+                                 <p class="accordion-content__text">
+                                    Release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                 </p>
+                              </li>
+
+                              <li class="accordion-content__item">
+                                 <span class="accordion-content__number--1">
+                                    $25
+                                 </span>
+
+                                 <span class="accordion-content__number--2">
+                                    /
+                                 </span>
+
+                                 <span class="accordion-content__number--3">
+                                    per hour
+                                 </span>
+                              </li>
+
+                              <li class="accordion-content__item">
+                                 <a class="accordion-content__btn" href="#">
+                                    <span class="accordion-content__btn--text">
+                                       order
+                                    </span>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </li>
+
+                     <li class="accordion__item">
+                        <button class="accordion__title-btn" type="button">
+                           <h3 class="accordion__name">
+                              Pro care
+
+                              <div class="accordion__btn-box">
+                                 <svg class="accordion__title-icon" viewBox="0 0 6 4" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.00003 3.0129L1.00003 1.01302" stroke-width="0.5"
+                                       stroke-linecap="round" />
+                                    <path d="M3 3.0127L5 1.0127" stroke-width="0.5" stroke-linecap="round" />
+                                 </svg>
+                              </div>
+                           </h3>
+                        </button>
+
+                        <div class="accordion__content accordion-content">
+                           <ul class="accordion-content__list">
+                              <li class="accordion-content__item">
+                                 <p class="accordion-content__text">
+                                    Release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                 </p>
+                              </li>
+
+                              <li class="accordion-content__item">
+                                 <span class="accordion-content__number--1">
+                                    $35
+                                 </span>
+
+                                 <span class="accordion-content__number--2">
+                                    /
+                                 </span>
+
+                                 <span class="accordion-content__number--3">
+                                    per hour
+                                 </span>
+                              </li>
+
+                              <li class="accordion-content__item">
+                                 <a class="accordion-content__btn" href="#">
+                                    <span class="accordion-content__btn--text">
+                                       order
+                                    </span>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </li>
+                  </ul>
+               </li>
+
+               <li class="prices__item">
+                  <h2 class="prices__title title">
+                     Our best
+                     <span class="title--green">
+                        gardeners
+                     </span>
+                     are ready to help you
+                  </h2>
+
+                  <a class="prices__btn btn" href="#">
+                     <span class="btn__text btn__text--red">
+                        Contact us
+                     </span>
+                  </a>
+
+                  <div class="prices__img-box image__box">
+                     <img class="image" src="images/prices/leafs.png" alt="image">
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+
+      <section class="contact" id="contact">
+         <div class="contact__container container">
+
+            <h2 class="contact__title title">
+               contact us
+            </h2>
+
+            <ul class="contact__list">
+               <li class="contact__item contact__item--img">
+                  <div class="contact__img-box ibg">
+                     <img class="contact__image" src="images/contact/img-bg.png" alt="foto">
+                  </div>
+               </li>
+
+               <li class="contact__item contact__item--text">
+
+                  <div class="contact__box-content">
+                     <select class="contact__select select__form" name="form" id="form" selectPlaceholder="City"
+                        data-placeholder="City">
+
+                        <option selected value=""></option>
+                        <option value="1">
+                           Canandaigua, NY
+                        </option>
+                        <option value="2">
+                           New York City
+                        </option>
+                        <option value="3">
+                           Yonkers, NY
+                        </option>
+                        <option value="4">
+                           Sherrill, NY
+                        </option>
+                     </select>
+
+                     <adress class="contact__card-box">
+                        <ul class="contact__card-list">
+                           <li class="contact__card-item card">
+                              <ul class="card__list">
+                                 <li class="card__item">
+                                    <p class="card__name">
+                                       City:
+                                    </p>
+                                    <p class="card__text">
+                                       Canandaigua,&nbsp;NY
+                                    </p>
+                                 </li>
+
+                                 <li class="card__item">
+                                    <p class="card__name">
+                                       Phone:
+                                    </p>
+                                    <p class="card__text">
+                                       +1&nbsp;585&nbsp;393&nbsp;0001
+                                    </p>
+                                 </li>
+
+                                 <li class="card__item">
+                                    <p class="card__name">
+                                       Office adress:
+                                    </p>
+                                    <p class="card__text">
+                                       151&nbsp;Charlotte&nbsp;Street
+                                    </p>
+                                 </li>
+                              </ul>
+
+                              <a class="card__btn btn" href="tel: +15853930001">
+                                 <span class="btn__text">
+                                    call us
+                                 </span>
+                              </a>
+                           </li>
+
+                           <li class="contact__card-item card">
+                              <ul class="card__list">
+                                 <li class="card__item">
+                                    <p class="card__name">
+                                       City:
+                                    </p>
+                                    <p class="card__text">
+                                       New&nbsp;York&nbsp;City
+                                    </p>
+                                 </li>
+
+                                 <li class="card__item">
+                                    <p class="card__name">
+                                       Phone:
+                                    </p>
+                                    <p class="card__text">
+                                       +1&nbsp;212&nbsp;456&nbsp;0002
+                                    </p>
+                                 </li>
+
+                                 <li class="card__item">
+                                    <p class="card__name">
+                                       Office adress:
+                                    </p>
+                                    <p class="card__text">
+                                       9&nbsp;East&nbsp;91st&nbsp;Street
+                                    </p>
+                                 </li>
+                              </ul>
+
+                              <a class="card__btn btn" href="tel:+12124560002">
+                                 <span class="btn__text">
+                                    call us
+                                 </span>
+                              </a>
+                           </li>
+
+                           <li class="contact__card-item card">
+                              <ul class="card__list">
+                                 <li class="card__item">
+                                    <p class="card__name">
+                                       City:
+                                    </p>
+                                    <p class="card__text">
+                                       Yonkers,&nbsp;NY
+                                    </p>
+                                 </li>
+
+                                 <li class="card__item">
+                                    <p class="card__name">
+                                       Phone:
+                                    </p>
+                                    <p class="card__text">
+                                       +1&nbsp;914&nbsp;678&nbsp;0003
+                                    </p>
+                                 </li>
+
+                                 <li class="card__item">
+                                    <p class="card__name">
+                                       Office adress:
+                                    </p>
+                                    <p class="card__text">
+                                       511&nbsp;Warburton&nbsp;Ave
+                                    </p>
+                                 </li>
+                              </ul>
+
+                              <a class="card__btn btn" href="tel: +19146780003">
+                                 <span class="btn__text">
+                                    call us
+                                 </span>
+                              </a>
+                           </li>
+
+                           <li class="contact__card-item card">
+                              <ul class="card__list">
+                                 <li class="card__item">
+                                    <p class="card__name">
+                                       City:
+                                    </p>
+                                    <p class="card__text">
+                                       Sherrill,&nbsp;NY
+                                    </p>
+                                 </li>
+
+                                 <li class="card__item">
+                                    <p class="card__name">
+                                       Phone:
+                                    </p>
+                                    <p class="card__text">
+                                       +1&nbsp;315&nbsp;908&nbsp;0004
+                                    </p>
+                                 </li>
+
+                                 <li class="card__item">
+                                    <p class="card__name">
+                                       Office adress:
+                                    </p>
+                                    <p class="card__text">
+                                       14&nbsp;WEST&nbsp;Noyes&nbsp;BLVD
+                                    </p>
+                                 </li>
+                              </ul>
+
+                              <a class="card__btn btn" href="tel: +13159080004">
+                                 <span class="btn__text">
+                                    call us
+                                 </span>
+                              </a>
+                           </li>
+                        </ul>
+                     </adress>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+   </main>
+   <footer class="footer" id="footer">
+      <div class="container">
+         <ul class="footer__list">
+            <li class="footer__item">
+
+               <span class="footer__text"> &copy;</span>
+
+               <span class="footer__text">2022</span>
+
+               <a class="footer__link" href="https://github.com/NataliaPW">
+                  <span class="footer__text">github</span>
+               </a>
+            </li>
+
+            <li class="footer__item">
+               <a class="footer__link" href="https://rs.school/js/">
+
+                  <span class="footer__text"> Rolling&nbsp;Scopes&nbsp;School</span>
+               </a>
+            </li>
+
+            <li class="footer__item">
+               <ul class="footer__social social">
+                  <li class="social__item">
+                     <a class="social__link" href="#" aria-label="instagram">
+                        <svg class="social__icon social__icon--1" viewBox="0 0 28 28" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M15.36 0.666992C17.76 0.666992 18.267 0.693992 19.493 0.746992C20.906 0.813992 21.88 1.03999 22.72 1.37399C23.6 1.70699 24.347 2.17399 25.08 2.90699C25.827 3.63999 26.28 4.38699 26.627 5.26699C26.96 6.10699 27.174 7.07999 27.24 8.50699C27.307 9.77399 27.32 10.267 27.32 12.934V15.067C27.32 17.734 27.307 18.227 27.24 19.494C27.217 20.659 26.994 21.764 26.604 22.788L26.626 22.721C26.279 23.601 25.826 24.348 25.093 25.081C24.346 25.828 23.6 26.281 22.72 26.628C21.88 26.961 20.907 27.175 19.493 27.241C18.226 27.308 17.72 27.321 15.053 27.321H12.933C10.266 27.321 9.77302 27.308 8.49302 27.241C7.32802 27.218 6.22302 26.995 5.19902 26.605L5.26602 26.627C4.34302 26.274 3.55602 25.753 2.90702 25.094L2.90602 25.093C2.24002 24.441 1.71402 23.649 1.37402 22.764L1.35902 22.719C0.992025 21.763 0.769025 20.657 0.746025 19.502V19.492C0.693025 18.45 0.663025 17.229 0.663025 16.002C0.663025 15.776 0.664025 15.55 0.666025 15.325V15.359V12.626C0.666025 10.226 0.693025 9.71899 0.746025 8.49299C0.813025 7.07999 1.03902 6.10599 1.35902 5.26599C1.70602 4.38599 2.15902 3.63899 2.90602 2.90599C3.55102 2.23899 4.34002 1.71599 5.22302 1.38699L5.26602 1.37299C6.22102 1.00199 7.32603 0.773992 8.48102 0.746992H8.49302C9.72003 0.693992 10.226 0.666992 12.626 0.666992H15.36ZM15.387 3.06699H12.6C10.293 3.06699 9.80002 3.09399 8.60003 3.14699C7.30702 3.19999 6.60003 3.41399 6.13303 3.59999C5.50603 3.83999 5.06602 4.13299 4.60002 4.59999C4.13402 5.06699 3.84002 5.50699 3.60002 6.13299C3.42702 6.59999 3.20002 7.30599 3.14702 8.61299C3.09402 9.81299 3.06702 10.293 3.06702 12.613V15.386C3.06702 17.706 3.09402 18.186 3.14702 19.386C3.20002 20.679 3.41402 21.386 3.60002 21.853C3.84002 22.48 4.13302 22.92 4.60002 23.386C5.06702 23.852 5.50703 24.146 6.13303 24.386C6.60003 24.573 7.30602 24.786 8.61302 24.839C9.90602 24.906 10.373 24.919 13.253 24.919H14.733C17.626 24.919 18.08 24.906 19.386 24.839C20.679 24.786 21.386 24.572 21.853 24.386C22.48 24.146 22.92 23.853 23.386 23.386C23.852 22.919 24.146 22.479 24.386 21.853C24.573 21.386 24.786 20.68 24.839 19.386C24.906 18.079 24.919 17.626 24.919 14.733V13.266C24.919 10.373 24.906 9.90599 24.839 8.59899C24.786 7.30599 24.572 6.59899 24.386 6.13199C24.16 5.53099 23.819 5.01799 23.387 4.59999L23.386 4.59899C22.966 4.16599 22.454 3.82499 21.881 3.60799L21.853 3.59899C21.121 3.32299 20.275 3.15799 19.391 3.14599H19.386C18.358 3.09399 17.155 3.06399 15.944 3.06399C15.748 3.06399 15.552 3.06499 15.356 3.06599H15.386L15.387 3.06699ZM14 7.14699C17.781 7.14699 20.847 10.212 20.847 13.994C20.847 17.776 17.782 20.841 14 20.841C10.219 20.841 7.15302 17.776 7.15302 13.994C7.15302 10.212 10.218 7.14699 14 7.14699ZM14 9.54699C11.544 9.54699 9.55303 11.538 9.55303 13.994C9.55303 16.45 11.544 18.441 14 18.441C16.456 18.441 18.447 16.45 18.447 13.994C18.447 11.538 16.456 9.54699 14 9.54699ZM21.107 5.27999C21.991 5.27999 22.707 5.99599 22.707 6.87999C22.707 7.76399 21.991 8.47999 21.107 8.47999C20.223 8.47999 19.507 7.76399 19.507 6.87999C19.507 5.99599 20.223 5.27999 21.107 5.27999Z" />
+                        </svg>
+                     </a>
+                  </li>
+
+                  <li class="social__item">
+                     <a class="social__link" href="#" aria-label="facebook">
+                        <svg class="social__icon social__icon--2" viewBox="0 0 17 28" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M5.04 27.333L5 15.666H0V10.666H5V7.33302C5 2.84002 7.787 0.666016 11.8 0.666016C13.72 0.666016 15.373 0.799016 15.853 0.866016V5.57302H13.066C10.893 5.57302 10.466 6.61302 10.466 8.13302V10.666H16.666L14.999 15.666H10.466V27.333H5.039H5.04Z" />
+                        </svg>
+                     </a>
+                  </li>
+
+                  <li class="social__item">
+                     <a class="social__link" href="#" aria-label="twitter">
+                        <svg class="social__icon social__icon--3" viewBox="0 0 28 22" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M27.333 2.83998C26.333 3.33298 25.333 3.50698 24.16 3.66698C25.333 2.99998 26.16 1.99998 26.493 0.666984C25.488 1.27498 24.317 1.73798 23.07 1.98898L23 2.00098C21.969 0.986984 20.56 0.354984 19.004 0.333984H19C16.16 0.333984 13.667 2.84098 13.667 5.84098C13.667 6.33398 13.667 6.66798 13.84 7.00098C9.26203 6.82298 5.22103 4.66398 2.52903 1.36198L2.50703 1.33398C2.08203 2.05998 1.83103 2.93198 1.83103 3.86298C1.83103 3.97198 1.83403 4.08098 1.84103 4.18898L1.84003 4.17398C1.87403 6.05198 2.84903 7.69498 4.31303 8.65498L4.33403 8.66798C3.49403 8.66798 2.66703 8.33498 1.82703 8.00098C1.82703 10.668 3.66703 12.841 6.16003 13.334C5.66703 13.507 5.16003 13.507 4.66703 13.507C4.33403 13.507 4.00003 13.507 3.66703 13.334C4.33403 15.507 6.33403 17.174 8.84003 17.174C7.04003 18.629 4.72403 19.509 2.20303 19.509C2.13203 19.509 2.06103 19.508 1.99003 19.507H2.00103H0.66803C3.03303 21.016 5.90403 21.936 8.98403 22H9.00103C19.001 22 24.508 13.667 24.508 6.49298V5.82598C25.655 5.03598 26.601 4.03898 27.311 2.88198L27.335 2.83998H27.333Z" />
+                        </svg>
+                     </a>
+                  </li>
+
+                  <li class="social__item">
+                     <a class="social__link" href="#" aria-label="pinterest">
+                        <svg class="social__icon social__icon--1" viewBox="0 0 28 28" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M14 0.666992C6.65699 0.693992 0.713989 6.65299 0.713989 14C0.713989 19.599 4.16599 24.393 9.05699 26.368L9.14599 26.4C9.01299 25.347 8.91899 23.733 9.18599 22.573L10.746 15.946C10.746 15.946 10.346 15.146 10.346 13.973C10.346 12.12 11.426 10.746 12.773 10.746C13.906 10.746 14.466 11.599 14.466 12.613C14.466 13.76 13.733 15.466 13.346 17.053C13.026 18.386 14.013 19.466 15.333 19.466C17.706 19.466 19.52 16.973 19.52 13.373C19.52 10.173 17.227 7.95999 13.947 7.95999C13.871 7.95599 13.783 7.95399 13.694 7.95399C10.505 7.95399 7.92099 10.539 7.92099 13.727C7.92099 13.729 7.92099 13.731 7.92099 13.733C7.92099 14.88 8.36099 16.106 8.90799 16.773C9.01499 16.906 9.02799 17.026 8.98799 17.16L8.61499 18.667C8.56199 18.907 8.41499 18.974 8.17499 18.854C6.49499 18.067 5.45499 15.654 5.45499 13.681C5.45499 9.48099 8.52199 5.62799 14.282 5.62799C18.895 5.62799 22.509 8.90799 22.509 13.321C22.509 17.921 19.602 21.614 15.576 21.614C14.243 21.614 12.963 20.907 12.536 20.081L11.696 23.241C11.265 24.578 10.704 25.739 10.008 26.804L10.042 26.748C11.212 27.12 12.558 27.335 13.953 27.335C21.317 27.335 27.286 21.365 27.286 14.002C27.286 6.65499 21.344 0.695992 14.004 0.668992H14.001L14 0.666992Z" />
+                        </svg>
+                     </a>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+      </div>
+   </footer>
+
+
+   <script src="js/jquery-3.6.0.min.js"></script>
+   <script src="js/jquery.formstyler.min.js"></script>
+   <script src="js/fancybox.umd.min.js"></script>
+   <script src="index.js"></script>
+   <script>
+      $(function () {
+         $('.accordion__title-btn').on('click', function () {
+            $('.accordion__item').removeClass('accordion__item--active');
+            $(this).parent().addClass('accordion__item--active');
+         })
+      });
+
+      function ibg() {
+         let ibg = document.querySelectorAll(".ibg");
+         for (var i = 0; i < ibg.length; i++) {
+            if (ibg[i].querySelector('img')) {
+               ibg[i].style.backgroundImage = 'url(' + ibg[i].querySelector('img').getAttribute('src') + ')';
+            }
+         }
+      }
+      ibg();
+
+      (function ($) {
+         $(function () {
+
+            $('select').styler();
+
+         });
+      })(jQuery);
+   </script>
+</body>
+
+</html>
