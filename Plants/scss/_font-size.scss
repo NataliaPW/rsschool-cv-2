@@ -1,0 +1,15 @@
+%asz16 {
+  @include font-size-adopt(16, 14);
+}
+
+ %asz20 {
+  @include font-size-adopt(20, 15);
+}  
+
+%asz40 {
+  @include font-size-adopt(40, 32);
+}
+
+%asz45 {
+  @include font-size-adopt(45, 38);
+}
