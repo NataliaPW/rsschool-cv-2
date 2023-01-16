@@ -37,7 +37,7 @@
       <div class="header__top">
          <div class="container">
             <div class="header__menu menu">
-               <a class="header__logo logo" href="#body">
+               <a class="header__logo logo" href="#body" arial-label="logo">
                   <svg class="logo__img" viewBox="0 0 81 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                      <path class="logo__img--green"
                         d="M2.52667 20.9466L10.9212 3.66409C10.9212 3.66409 3.57596 7.00909 2.00199 10.9116C0.428017 14.8141 0.927102 18.4038 2.00201 20.9466"
@@ -201,7 +201,8 @@
 
             <ul class="service__list-btn">
                <li class="service__item-btn">
-                  <a class="service__link-gallery" href="images/service/img1.jpg" data-fancybox="project">
+                  <a class="service__link-gallery" href="images/service/img1.jpg" data-fancybox="project"
+                     arial-label="image">
                      <div class="service__img-box image__box">
                         <img class="image" src="images/service/img1.jpg" alt="image">
                      </div>
@@ -221,7 +222,8 @@
                </li>
 
                <li class="service__item-btn">
-                  <a class="service__link-gallery" href="images/service/img2.jpg" data-fancybox="project">
+                  <a class="service__link-gallery" href="images/service/img2.jpg" data-fancybox="project"
+                     arial-label="image">
                      <div class="service__img-box image__box">
                         <img class="image" src="images/service/img2.jpg" alt="image">
                      </div>
@@ -241,7 +243,8 @@
                </li>
 
                <li class="service__item-btn">
-                  <a class="service__link-gallery" href="images/service/img3.jpg" data-fancybox="project">
+                  <a class="service__link-gallery" href="images/service/img3.jpg" data-fancybox="project"
+                     arial-label="image">
                      <div class="service__img-box image__box">
                         <img class="image" src="images/service/img3.jpg" alt="image">
                      </div>
@@ -261,7 +264,8 @@
                </li>
 
                <li class="service__item-btn">
-                  <a class="service__link-gallery" href="images/service/img4.jpg" data-fancybox="project">
+                  <a class="service__link-gallery" href="images/service/img4.jpg" data-fancybox="project"
+                     arial-label="image">
                      <div class="service__img-box image__box">
                         <img class="image" src="images/service/img4.jpg" alt="image">
                      </div>
@@ -281,7 +285,8 @@
                </li>
 
                <li class="service__item-btn">
-                  <a class="service__link-gallery" href="images/service/img5.jpg" data-fancybox="project">
+                  <a class="service__link-gallery" href="images/service/img5.jpg" data-fancybox="project"
+                     arial-label="image">
                      <div class="service__img-box image__box">
                         <img class="image" src="images/service/img5.jpg" alt="image">
                      </div>
@@ -301,7 +306,8 @@
                </li>
 
                <li class="service__item-btn">
-                  <a class="service__link-gallery" href="images/service/img6.jpg" data-fancybox="project">
+                  <a class="service__link-gallery" href="images/service/img6.jpg" data-fancybox="project"
+                     arial-label="image">
                      <div class="service__img-box image__box">
                         <img class="image" src="images/service/img6.jpg" alt="image">
                      </div>
@@ -521,7 +527,9 @@
                <li class="contact__item contact__item--text">
 
                   <div class="contact__box-content">
-                     <select class="contact__select select__form" name="form" id="form" selectPlaceholder="City"
+                     <label class="select__label sr-only" for="addressCard">Address Card visibility</label>
+
+                     <select class="contact__select select__form" name="addressCard" id="addressCard" selectPlaceholder="City"
                         data-placeholder="City">
 
                         <option selected value=""></option>
@@ -539,7 +547,7 @@
                         </option>
                      </select>
 
-                     <adress class="contact__card-box">
+                     <address class="contact__card-box">
                         <ul class="contact__card-list">
                            <li class="contact__card-item card">
                               <ul class="card__list">
@@ -571,7 +579,7 @@
                                  </li>
                               </ul>
 
-                              <a class="card__btn btn" href="tel: +15853930001">
+                              <a class="card__btn btn" href="tel:+15853930001">
                                  <span class="btn__text">
                                     call us
                                  </span>
@@ -645,7 +653,7 @@
                                  </li>
                               </ul>
 
-                              <a class="card__btn btn" href="tel: +19146780003">
+                              <a class="card__btn btn" href="tel:+19146780003">
                                  <span class="btn__text">
                                     call us
                                  </span>
@@ -682,14 +690,14 @@
                                  </li>
                               </ul>
 
-                              <a class="card__btn btn" href="tel: +13159080004">
+                              <a class="card__btn btn" href="tel:+13159080004">
                                  <span class="btn__text">
                                     call us
                                  </span>
                               </a>
                            </li>
                         </ul>
-                     </adress>
+                     </address>
                   </div>
                </li>
             </ul>
@@ -794,6 +802,33 @@
 
          });
       })(jQuery);
+
+      //открытие меню
+      const menuNavMain = document.querySelector('.menu__nav');
+      const menuBtnMain = document.querySelector('.btn-burger');
+      const menuItemMain = document.querySelector('.menu__link');
+      const menuListMain = document.querySelector('.menu__list');
+      const menuBodyMain = document.querySelector('body');
+      document.addEventListener('click', menuMain);
+
+      function menuMain(event) {
+         if (event.target.closest('.btn-burger')) {
+            menuItemMain.classList.remove('menu__link--active');
+            menuNavMain.classList.toggle('menu__nav--active');
+            menuListMain.classList.toggle('menu__list--active');
+            menuBtnMain.classList.toggle('btn-burger--active');
+            menuBodyMain.classList.toggle('hidden');
+         }
+
+         if (event.target.closest('.menu__link')) {
+            menuNavMain.classList.remove('menu__nav--active');
+            menuListMain.classList.remove('menu__list--active');
+            menuItemMain.classList.remove('menu__link--active');
+            menuBtnMain.classList.remove('btn-burger--active');
+            menuBodyMain.classList.remove('hidden');
+            menuItemMain.classList.add('menu__link--active');
+         }
+      }
    </script>
 </body>
 

@@ -10,10 +10,20 @@
       display: flex;
       justify-content: space-between;
       @include gap-all-adopt(30, 20, 1);
+
+      @media (max-width: $md6) {
+         flex-wrap: wrap;
+         justify-content: center;
+      }
    }
 
    &__item {
       width: calc(332/1220*100%);
+
+      @media (max-width: $md6) {
+         width: 100%;
+         text-align: center;
+      }
 
       &:last-child {
          text-align: right;
@@ -28,6 +38,21 @@
 
          .prices__title {
             @include m-font(38, 40, 0);
+
+            @media (max-width: $md3) {
+               font-size: 25px;
+               line-height: calc(35/25);
+               margin-top: 90px;
+            }
+
+            @media (max-width: $md6) {
+               text-align: center;
+               margin: 40px auto;
+            }
+         }
+
+         @media (max-width: $md6) {
+            width: 100%;
          }
       }
    }
@@ -41,11 +66,19 @@
       height: 50px;
       border-radius: 5px;
       @include m-adopt(39, 20, 3);
+
+      @media (max-width: $md6) {
+         margin: 0 auto;
+      }
    }
 
    &__img-box {
-      width:152px;
+      width: 152px;
       height: 175px;
+
+      @media (max-width: $md6) {
+         display: none;
+      }
    }
 }
 
@@ -58,9 +91,16 @@
       border: 1px solid $color-gray-200;
       align-items: center;
       border-radius: 20px;
-      @include p-adopt(34, 10, 1);
-      @include p-adopt(34, 10, 3);
+      // @include p-adopt(34, 10, 1);
+      // @include p-adopt(34, 10, 3);
+      padding-top: 34px;
+      padding-bottom: 34px;
       min-width: 270px;
+
+      @media (max-width: $md6) {
+         width: fit-content;
+         margin: 0 auto;
+      }
    }
 
    &__item {
@@ -115,8 +155,10 @@
    }
 
    &__title-btn {
-      @include p-adopt(40, 10, 2);
-      @include p-adopt(40, 10, 4);
+      //  @include p-adopt(40, 10, 2);
+      //  @include p-adopt(40, 10, 4);
+      padding-right: 40px;
+      padding-left: 40px;
       background: $color-gray-100;
       height: 50px;
       border-radius: 20px;

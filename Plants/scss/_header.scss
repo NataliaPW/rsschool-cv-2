@@ -3,7 +3,7 @@
 
      &__top {
         padding: 46px 0;
-      //  position: fixed;
+        position: fixed;
         top: 0;
         left: 0;
         right: 0;
@@ -203,7 +203,7 @@
   }
 
   .content {
-  //   padding-top: 134px;
+     padding-top: 134px;
 
      &__list {
         display: flex;
@@ -219,6 +219,14 @@
 
         &--img {
            width: calc(449/1220*100%);
+
+           @media (max-width: $md3) {
+              order: 2;
+           }
+
+           @media (max-width: $md6) {
+              display: none;
+           }
         }
 
         &--text {
@@ -226,6 +234,14 @@
 
            *:last-child {
               margin-bottom: 0;
+           }
+
+           @media (max-width: $md3) {
+              order: 1;
+           }
+
+           @media (max-width: $md6) {
+              width: 100%;
            }
         }
      }
@@ -250,7 +266,6 @@
      }
 
      &__btn {
-        @include m-font(48, 20, 2);
         width: 158px;
         height: 44px;
         border-radius: 10px;

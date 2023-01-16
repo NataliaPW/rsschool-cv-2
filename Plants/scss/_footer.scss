@@ -7,6 +7,11 @@
       align-items: center;
       justify-content: space-between;
       @include gap-all-adopt(30, 20, 1);
+
+       @media (max-width: $md3) {
+         flex-direction: column;
+         justify-content: center;
+      }
    }
 
    &__item {
